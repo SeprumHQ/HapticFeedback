@@ -1,0 +1,22 @@
+{
+  "name": "HapticFeedback",
+  "version": "0.1.0",
+  "summary": "A short description of HapticFeedback.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Egor Iskrenkov/HapticFeedback",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Egor Iskrenkov": "mrblazon@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Egor Iskrenkov/HapticFeedback.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HapticFeedback/Classes/**/*"
+}

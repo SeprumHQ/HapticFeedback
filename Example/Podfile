@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HapticFeedback_Example' do
+  pod 'HapticFeedback', :path => '../'
+
+  target 'HapticFeedback_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

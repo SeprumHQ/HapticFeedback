@@ -1,0 +1,16 @@
+PODS:
+  - HapticFeedback (0.1.0)
+
+DEPENDENCIES:
+  - HapticFeedback (from `../`)
+
+EXTERNAL SOURCES:
+  HapticFeedback:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HapticFeedback: 7ac8e284da6c955f539bac310b3c73625d032d51
+
+PODFILE CHECKSUM: 52b04a49aea957ef246dbd2987b7deae56aefe6d
+
+COCOAPODS: 1.10.0.rc.1

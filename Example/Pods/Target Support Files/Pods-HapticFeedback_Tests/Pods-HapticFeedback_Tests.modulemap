@@ -1,0 +1,6 @@
+framework module Pods_HapticFeedback_Tests {
+  umbrella header "Pods-HapticFeedback_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
