@@ -7,17 +7,30 @@
 
 import Foundation
 
+private var registryKey: Void?
+
 extension UIControl {
 
-    public func setFeedback(type: HapticGenerator.FeedbackType, for events: UIControl.Event = .touchDown) {
+    public func setFeedback(type: HapticGenerator.FeedbackType, for event: UIControl.Event = .touchDown) {
+        guard !self.hapticEventsRegistry.keys.contains(event) else { return }
+
         let hapticResponder = HapticResponder(type)
 
-        addTarget(hapticResponder, action: #selector(hapticResponder.respond), for: events)
-        setAssociated(object: hapticResponder)
+        self.hapticEventsRegistry[event] = hapticResponder
+        addTarget(hapticResponder, action: #selector(hapticResponder.respond), for: event)
     }
 
-    private func setAssociated(object: Any) {
-        objc_setAssociatedObject(self, UUID().uuidString, object, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+    public func removeFeedback(type: HapticGenerator.FeedbackType, from event: UIControl.Event = .touchDown) {
+        guard let hapticResponder = hapticEventsRegistry[event] else { return }
+
+        hapticEventsRegistry[event] = nil
+        removeTarget(hapticResponder, action: #selector(hapticResponder.respond), for: event)
+    }
+
+    // Stores haptic responders for each registered haptic event
+    private var hapticEventsRegistry: [UIControl.Event: HapticResponder] {
+        get { return getAssociatedObject(&registryKey) ?? [:] }
+        set { setAssociatedObject(&registryKey, newValue) }
     }
 
 }

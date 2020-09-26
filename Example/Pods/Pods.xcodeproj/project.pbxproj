@@ -16,6 +16,8 @@
 		883F07E78FF427C99F5AF2528786FFD7 /* Pods-HapticFeedback_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F64D4894F90BD26EFEB5C538561B2EFB /* Pods-HapticFeedback_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A138E7BC7BD7097912AAAA1AF8D6553B /* Pods-HapticFeedback_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDE4F089286C5FA9A22F151543791050 /* Pods-HapticFeedback_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3EFBE5356BAE8F356CCE816B5DFBFF5 /* HapticFeedback-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8C1B41DE2D1B1A07C9FF49934CB2F1 /* HapticFeedback-dummy.m */; };
+		EE53779B251F7F0C00AED844 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE53779A251F7F0C00AED844 /* Extensions.swift */; };
+		EE5377A0251F810B00AED844 /* Associated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE53779F251F810B00AED844 /* Associated.swift */; };
 		EEFDCE70251BE3770042C619 /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDCE6F251BE3770042C619 /* HapticGenerator.swift */; };
 		EEFDCE80251BE6000042C619 /* HapticFeedbackControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDCE7F251BE6000042C619 /* HapticFeedbackControl.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +69,8 @@
 		DDE4F089286C5FA9A22F151543791050 /* Pods-HapticFeedback_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HapticFeedback_Tests-umbrella.h"; sourceTree = "<group>"; };
 		E51740471D2AA496370AB5EB6B2B1A71 /* HapticFeedback.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HapticFeedback.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8C1B41DE2D1B1A07C9FF49934CB2F1 /* HapticFeedback-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HapticFeedback-dummy.m"; sourceTree = "<group>"; };
+		EE53779A251F7F0C00AED844 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EE53779F251F810B00AED844 /* Associated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Associated.swift; sourceTree = "<group>"; };
 		EEFDCE6F251BE3770042C619 /* HapticGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticGenerator.swift; sourceTree = "<group>"; };
 		EEFDCE7F251BE6000042C619 /* HapticFeedbackControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackControl.swift; sourceTree = "<group>"; };
 		F64D4894F90BD26EFEB5C538561B2EFB /* Pods-HapticFeedback_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HapticFeedback_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 			children = (
 				EEFDCE6F251BE3770042C619 /* HapticGenerator.swift */,
 				EEFDCE7F251BE6000042C619 /* HapticFeedbackControl.swift */,
+				EE53779A251F7F0C00AED844 /* Extensions.swift */,
+				EE53779F251F810B00AED844 /* Associated.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -392,8 +398,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEFDCE80251BE6000042C619 /* HapticFeedbackControl.swift in Sources */,
+				EE5377A0251F810B00AED844 /* Associated.swift in Sources */,
 				D3EFBE5356BAE8F356CCE816B5DFBFF5 /* HapticFeedback-dummy.m in Sources */,
 				EEFDCE70251BE3770042C619 /* HapticGenerator.swift in Sources */,
+				EE53779B251F7F0C00AED844 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
