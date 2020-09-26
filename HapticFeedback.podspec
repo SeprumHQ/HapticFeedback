@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'HapticFeedback'
-  s.version               = '1.0.0'
+  s.version               = '1.1.0'
   s.summary               = 'Haptic feedback shorthand library'
   s.homepage              = 'https://github.com/SkafferTeam/HapticFeedback'
   s.license               = { type: 'MIT', file: 'LICENSE' }

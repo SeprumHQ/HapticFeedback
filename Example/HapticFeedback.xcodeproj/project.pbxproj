@@ -484,6 +484,7 @@
 				INFOPLIST_FILE = HapticFeedback/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "app.skaffer.haptic-feedback";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,6 +502,7 @@
 				INFOPLIST_FILE = HapticFeedback/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "app.skaffer.haptic-feedback";
 				PRODUCT_NAME = "$(TARGET_NAME)";
